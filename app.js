@@ -64,6 +64,7 @@ app.use(
 			baseUri: ["'self'"],
 			fontSrc: ["'self'", 'https:', 'http:', 'data:'],
 			scriptSrc: ["'self'", (req, res) => `'nonce-${res.locals.nonce}'`, 'https:', 'http:', 'blob:'],
+			// scriptSrc: ["'self'", 'https:', 'http:', 'blob:', "'unsafe-inline'"],
 			styleSrc: ["'self'", "'unsafe-inline'", 'https:', 'http:'],
 		},
 	})

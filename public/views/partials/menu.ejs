@@ -1,0 +1,9 @@
+<div id="desktop_button_area">
+	<div id="desktop_button_container" class="menu">
+		<ul>
+			<% menuItems.forEach(function(menuItem) { %>
+			<li><%- include('./glitch_text.ejs', {text: menuItem}) %></li>
+			<% }); %>
+		</ul>
+	</div>
+</div>

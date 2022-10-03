@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('./head'); %>
+		<link rel="stylesheet" href="/css/home.min.css" />
+	</head>
+	<body>
+		<!-- LOADING ANIMATION -->
+		<%- include('./loading'); %>
+		<main>
+			<video autoplay muted loop id="video_bg">
+				<source src="/img/video_bg_compressed.mp4" type="video/mp4" />
+			</video>
+			<!-- PAGE TITLE -->
+			<%- include('./partials/glitch_text.ejs', {text: "新設計"}) %>
+			<!-- DESKTOP MENU -->
+			<%- include('./partials/menu', {menuItems: ["About", "Samples", "Playlist", "Contact"]}) %>
+		</main>
+		<%- include('./footer'); %>
+	</body>
+</html>
